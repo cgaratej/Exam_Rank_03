@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 15:04:48 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/06/06 15:01:11 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/06/06 15:02:05 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ char *get_next_line(int fd)
 	return (line);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <fcntl.h>
 
 int main(int argc, char **argv)
@@ -124,4 +124,4 @@ int main(int argc, char **argv)
 		free(line);
 	}
 	return (0);
-}
+}*/
