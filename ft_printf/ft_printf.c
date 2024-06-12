@@ -60,7 +60,7 @@ int ft_printf(const char *format, ... )
 			else if (format[i] == 'd')
 				put_nbr_base((long long int)va_arg(args, int), 10, &len);
 			else if (format[i] == 'x')
-				put_nbr_base((long long int)va_arg(args, int), 16, &len);
+				put_nbr_base((long long int)va_arg(args, unsigned int), 16, &len);
 		}
 		else
 		{

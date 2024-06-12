@@ -67,8 +67,13 @@ char *ft_strjoin(char *s1, char *s2)
 {
 	int		len1 = ft_strlen(s1);
 	int		len2 = ft_strlen(s2);
-	char	*join = malloc(len1 + len2 + 1);
+	char	*join;
 
+	if (!s1 || !s2)
+		return (NULL);
+	join = malloc(len1 + len2 + 1);
+	if (!join)
+		return (NULL);
 	ft_strcpy(join, s1);
 	ft_strcpy(join + len1, s2);
 	free(s1);
